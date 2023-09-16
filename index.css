@@ -1246,7 +1246,7 @@ input {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     text-align: center;
-    gap: 40px;
+    gap: 10px;
   }
 
   .favorite h2 {
