@@ -180,7 +180,7 @@ select {
   top: 0;
   left: 0;
   background-color: white;
-  z-index: var(--z-fixed);
+  z-index: 15;
   transition: box-shadow .4s;
 }
 
@@ -605,7 +605,9 @@ input {
     font-size: 2rem;
     font-weight: 600;
   }
-
+  .large__no-display {
+    display: none;
+  }
   .home p {
     width: 250px;
     margin: 0 auto;
@@ -869,7 +871,9 @@ input {
     text-align: center;
     margin-left: -50px;
   }
-
+  .large__no-display {
+    display: none;
+  }
   .card {
     display: flex;
     justify-content: center;
@@ -918,6 +922,7 @@ input {
     width: 600px;
   }
 
+  
   .oval {
     width: 550px;
     height: 450px;
@@ -1162,6 +1167,25 @@ input {
 /* ============DESKTOP============== */
 @media (min-width: 56em) {
 
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 15;
+    transition: box-shadow .4s;
+  }
+  
+  .nav {
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
   .container {
     width: 90%;
   }
@@ -1235,6 +1259,12 @@ input {
     display: none;
   }
 
+  .large__no-display{
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+  }
+
   .favorite {
     display: flex;
     flex-direction: column;
@@ -1302,6 +1332,7 @@ input {
 
   .about__text h1 {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   .about__text p {
@@ -1319,6 +1350,10 @@ input {
     margin-bottom: 2rem;
   }
 
+  .about__image img {
+    width: 500px;
+    height: 500px;
+  }
   .content {
     display: flex;
     justify-content: space-between;
@@ -1346,7 +1381,7 @@ input {
 
   .content__item h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .explore {
@@ -1359,9 +1394,6 @@ input {
     justify-content: space-between;
   }
 
-  .explore__no-show {
-
-  }
   .explore__text {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -1399,6 +1431,7 @@ input {
 
   .blog__container-left h1 {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   .blog__container-left p {
@@ -1428,6 +1461,7 @@ input {
   }
 
   .contact h1 {
+
     font-size: 4.5rem;
   }
 
