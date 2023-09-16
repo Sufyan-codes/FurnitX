@@ -805,13 +805,17 @@ input {
   color: white;
   background-color: #0d0606;
   height: 3rem;
-  width: 160px;
+  width: 100px;
   border-radius: 30px;
 }
 
 .footer__border{
   padding-bottom: 1rem;
   border-bottom: 2px solid #0d0606;
+}
+
+.footer__border a {
+  font-size: 1rem;
 }
 
 .footer__bottom {
