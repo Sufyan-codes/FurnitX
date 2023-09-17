@@ -85,9 +85,8 @@ body {
   line-height: 1.5;
   min-height: 100vh;
 
-  display: grid;
-  grid-template-rows: min-content 1fr;
-
+width: 100%;
+margin: 0 auto;
   overflow-x: hidden;
 }
 
@@ -220,9 +219,9 @@ select {
   justify-content: space-between;
 }
 
-.nav__right span {
+/* .nav__right span {
   margin: 1rem;
-}
+} */
 
 .login,
 .cart {
