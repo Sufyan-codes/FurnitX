@@ -56,7 +56,6 @@ p,
 figure,
 picture {
   margin: 0;
-  padding: 0;
 }
 
 h1,
@@ -86,15 +85,15 @@ body {
   line-height: 1.5;
   min-height: 100vh;
 
-  width: 100%;
-  margin: 0 auto;
+width: 100%;
+margin: 0 auto;
   overflow-x: hidden;
 }
 
 /* make images easier to work with */
 img,
 picture {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -106,6 +105,19 @@ select {
   font: inherit;
 }
 
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 
 /* ------------------- */
 /* Utility classes     */
@@ -113,17 +125,26 @@ select {
 
 /* general */
 
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
 .container {
   padding-inline: 2em;
   margin-inline: auto;
   width: 95%;
-  margin:  0 auto;
 }
 
 
-*{
+/* *{
   border: 3px solid salmon;
-}
+} */
 
 /* ------------------- */
 /* Compontents         */
@@ -170,7 +191,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  
 }
 
 .nav__logo {
@@ -328,7 +349,6 @@ select {
   width: 100%;
   margin: 0 auto;
 }
-
 .home span {
   font-size: 2rem;
 }
@@ -355,7 +375,7 @@ select {
 }
 
 .oval img {
-  width: 200px;
+  width: 250px;
   height: 150px;
   margin: 0 auto;
 }
@@ -421,8 +441,8 @@ a.shop {
 }
 
 .image__container img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   background-color: #f8f6f6;
   margin-bottom: 1rem;
 }
@@ -504,7 +524,6 @@ a.shop {
 .explore__no-show {
   display: none;
 }
-
 .blog__container-left {
   width: 280px;
   text-align: left;
@@ -592,11 +611,9 @@ input {
     font-size: 2rem;
     font-weight: 600;
   }
-
   .large__no-display {
     display: none;
   }
-
   .home p {
     width: 250px;
     margin: 0 auto;
@@ -860,11 +877,9 @@ input {
     text-align: center;
     margin-left: -50px;
   }
-
   .large__no-display {
     display: none;
   }
-
   .card {
     display: flex;
     justify-content: center;
@@ -913,7 +928,7 @@ input {
     width: 600px;
   }
 
-
+  
   .oval {
     width: 550px;
     height: 450px;
@@ -1168,7 +1183,7 @@ input {
     z-index: 15;
     transition: box-shadow .4s;
   }
-
+  
   .nav {
     width: 100%;
     margin: 0 auto;
@@ -1178,8 +1193,8 @@ input {
     justify-content: space-between;
     align-items: center;
   }
-
-
+  
+  
   .container {
     width: 90%;
   }
@@ -1249,11 +1264,11 @@ input {
     margin-bottom: 1.5rem;
   }
 
-  .no-display {
+  .no-display{
     display: none;
   }
 
-  .large__no-display {
+  .large__no-display{
     display: block;
     width: 250px;
     margin: 0 auto;
@@ -1270,7 +1285,7 @@ input {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     text-align: center;
-    
+    gap: 3px;
   }
 
   .favorite h2 {
@@ -1320,7 +1335,6 @@ input {
     display: flex;
     justify-content: space-between;
   }
-
   .about__intro {
     margin-bottom: 1rem;
   }
@@ -1349,7 +1363,6 @@ input {
     width: 500px;
     height: 500px;
   }
-
   .content {
     display: flex;
     justify-content: space-between;
@@ -1389,7 +1402,6 @@ input {
     display: block;
     width: 200px;
   }
-
   .explore__container {
     display: flex;
     justify-content: space-between;
@@ -1419,13 +1431,11 @@ input {
   .explore__img {
     margin-top: 1.5rem;
   }
-
   .explore__img img {
     width: 550px;
     height: 550px;
-
+    
   }
-
   .blog__container-left {
     width: 450px;
     text-align: left;
@@ -1445,7 +1455,6 @@ input {
   .blog__right {
     padding-left: 30px;
   }
-
   .second {
     display: block;
   }
