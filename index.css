@@ -91,6 +91,10 @@ body {
   overflow-x: hidden;
 }
 
+/* *{
+  border: 2px solid salmon;
+} */
+
 /* make images easier to work with */
 img,
 picture {
@@ -397,11 +401,7 @@ a.shop {
   padding: 1rem 3rem;
   border-radius: 5px;
 }
-
-.favorites {
-  display: grid;
-  grid-template-columns: 200px auto;
-}
+ 
 
 .favorite h2 {
   font-size: 1.6rem;
@@ -416,6 +416,7 @@ a.shop {
 }
 
 .card {
+  width: 100%;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -436,15 +437,13 @@ a.shop {
 }
 
 .image__container img {
-  width: 180px;
-  height: 180px;
   background-color: #f8f6f6;
   margin-bottom: 1rem;
 }
 
 .card__text {
   margin-bottom: 1rem;
-}
+} 
 
 .about__intro {
   margin-bottom: 1rem;
@@ -653,7 +652,7 @@ input {
     padding: .5rem 2rem;
     border-radius: 5px;
   }
-
+/* 
   .favorites {
     display: flex;
     flex-direction: column;
@@ -703,7 +702,7 @@ input {
 
   .card__text {
     margin-bottom: 1rem;
-  }
+  } */
 
   .about__intro {
     margin-bottom: 1rem;
@@ -866,22 +865,27 @@ input {
   }
 
   .favorites {
-    display: grid;
-    grid-template-columns: 300px auto;
-    gap: 10px;
-    text-align: center;
-    margin-left: -50px;
+    width: 100%;
+    display: flex;
+    
   }
+
+  .card{
+    width: 250px;
+    height: 250px;
+    flex: 3;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: 250px;
+  }
+
   .large__no-display {
     display: none;
   }
-  .card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
+  
   .about__text p {
     width: 350px;
 
@@ -910,6 +914,11 @@ input {
     font-size: 1.5rem;
   }
 
+  .home {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
   .home span {
     font-size: 2.5rem;
   }
@@ -952,13 +961,19 @@ input {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
   }
-
-
+  
   .favorites {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    
   }
+
+  .card{
+    width: 250px;
+    height: 250px;
+    flex: 2;
+  }
+
 
   .favorite h2 {
     font-size: 2.5rem;
@@ -1002,7 +1017,7 @@ input {
   .card__text {
     margin-bottom: 1rem;
   }
-
+ 
   .about__intro {
     margin-bottom: 1rem;
   }
@@ -1098,7 +1113,9 @@ input {
     display: block;
   }
 
-
+.blog__right {
+  margin-bottom: 10rem;
+}
   a.blog__button {
     color: white;
     background: #0d0606;
@@ -1265,21 +1282,30 @@ input {
     width: 250px;
     margin: 0 auto;
   }
-
-  .favorite {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 70px;
-  }
-
   .favorites {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    text-align: center;
-    gap: 3px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
   }
 
+  .card{
+    width: 250px;
+    height: 250px;
+    flex: 1;
+  }
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.image__container {
+  margin-bottom: 4rem;
+}
+
+.favorite {
+  margin-bottom: 4rem;
+}
   .favorite h2 {
     font-size: 2.5rem;
     font-weight: 500;
@@ -1294,6 +1320,7 @@ input {
 
   .card {
     text-align: center;
+    background: #f8f6f6;
     margin-bottom: 1rem;
   }
 
@@ -1310,13 +1337,6 @@ input {
 
   .price {
     padding-bottom: 1rem;
-  }
-
-  .image__container img {
-    width: 250px;
-    height: 250px;
-    background-color: #f8f6f6;
-    margin-bottom: 1rem;
   }
 
   .card__text {

@@ -31,5 +31,7 @@ const sr = ScrollReveal({
     delay: 400,
 }) 
 
-sr.reveal(`.home__text, .favorites__text, .about__intro, .about__content, .explore, .blog__container-left, .connect, .logo`, {origin: 'right'})
-sr.reveal(`.oval, .favorites, .about__content, .content__text, .explore__img,.form, nav__right`, {origin: 'left'})
+sr.reveal(`.about__content, .explore, .blog__container-left, .favorites__text`, {origin: 'right'})
+sr.reveal(` .favorites, .content__text, .explore__img, nav__right`, {origin: 'left'})
+sr.reveal(`.home__text, .oval, .about__intro`, {origin: 'top'})
+sr.reveal(`.about__content, .connect, .form`, {origin: 'bottom'})
