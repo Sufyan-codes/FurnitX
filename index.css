@@ -85,8 +85,9 @@ body {
   line-height: 1.5;
   min-height: 100vh;
 
-width: 100%;
-margin: 0 auto;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
   overflow-x: hidden;
 }
 
@@ -142,9 +143,7 @@ select {
 }
 
 
-/* *{
-  border: 3px solid salmon;
-} */
+
 
 /* ------------------- */
 /* Compontents         */
@@ -191,7 +190,6 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .nav__logo {
@@ -219,9 +217,9 @@ select {
   justify-content: space-between;
 }
 
-/* .nav__right span {
+.nav__right span {
   margin: 1rem;
-} */
+}
 
 .login,
 .cart {
@@ -345,10 +343,6 @@ select {
   text-align: center;
 }
 
-.main {
-  width: 100%;
-  margin: 0 auto;
-}
 .home span {
   font-size: 2rem;
 }
@@ -1176,7 +1170,6 @@ input {
   .header {
     position: fixed;
     width: 100%;
-    margin: 0 auto;
     top: 0;
     left: 0;
     background-color: white;
@@ -1185,8 +1178,6 @@ input {
   }
   
   .nav {
-    width: 100%;
-    margin: 0 auto;
     position: relative;
     height: var(--header-height);
     display: flex;
