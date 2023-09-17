@@ -1262,14 +1262,15 @@ input {
   .favorite {
     display: flex;
     flex-direction: column;
-    justify-content: center;  
+    justify-content: center;
+    padding-left: 70px;
   }
 
   .favorites {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     text-align: center;
-    justify-content: center;
+    
   }
 
   .favorite h2 {
