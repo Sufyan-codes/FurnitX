@@ -6,6 +6,7 @@ if(navToggle) {
     navToggle.addEventListener('click', ()=>{
         navMenu.classList.add('show-menu')
     })
+    
 }
 
 if(navClose) {
@@ -14,7 +15,16 @@ if(navClose) {
     })
 }
 
+/*==============REMOVE MENU AFTER CLICK===========*/
+const navLink = document.querySelectorAll('nav__link')
 
+const linkAction = () => {
+    const navMenu = document.getElementById('nav-menu')
+
+    navMenu.classList.remove('show-menu')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
 /*=============== SHADOW HEADER =================*/
 const  shadowHeader = () => {
     const header = document.getElementById('header')

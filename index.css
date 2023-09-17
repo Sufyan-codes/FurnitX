@@ -91,9 +91,7 @@ body {
   overflow-x: hidden;
 }
 
-/* *{
-  border: 2px solid salmon;
-} */
+
 
 /* make images easier to work with */
 img,
@@ -237,7 +235,7 @@ select {
   left: 0;
   background-color: hsla(0, 0%, 0%, .75);
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   padding-block: 1.8rem 5rem;
   text-align: center;
   backdrop-filter: blur(8px);
@@ -345,7 +343,6 @@ select {
   background: #f8f6f6;
   margin-top: 4rem;
   width: 90%;
-  height: 100vh;
   text-align: center;
 }
 
@@ -402,11 +399,19 @@ a.shop {
   padding: 1rem 3rem;
   border-radius: 5px;
 }
- 
-.favorite {
-  height: 100vh;
-  margin-top: 3rem;
+
+.favorites {
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 1rem;
 }
+
+.card {
+  text-align: center;
+  position: relative;
+  margin-bottom: .5rem;
+}
+
 
 .favorite h2 {
   font-size: 1.6rem;
@@ -417,12 +422,6 @@ a.shop {
 .favorite p {
   width: 250px;
   font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.card {
-  width: 100%;
-  text-align: center;
   margin-bottom: 1rem;
 }
 
@@ -442,6 +441,8 @@ a.shop {
 }
 
 .image__container img {
+  width: 100%;
+  height: 100%;
   background-color: #f8f6f6;
   margin-bottom: 1rem;
 }
@@ -450,9 +451,6 @@ a.shop {
   margin-bottom: 1rem;
 } 
 
-.about {
-  height: 100vh;
-}
 .about__intro {
   margin-bottom: 1rem;
 }
@@ -596,7 +594,7 @@ input {
   color: #0d0606;
 }
 
-@media (max-width: 35em) {
+@media (min-width: 35em) {
 
   .home {
     background: #f8f6f6;
@@ -660,12 +658,15 @@ input {
     padding: .5rem 2rem;
     border-radius: 5px;
   }
-/* 
+ 
   .favorites {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 5px;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 350px 350px;
+    justify-content: center;
+    column-gap: .5rem;
+    padding-top: 1rem;
+
   }
 
   .favorite h2 {
@@ -680,10 +681,6 @@ input {
     margin-bottom: 1rem;
   }
 
-  .card {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
 
   .card--name {
     padding: .1rem 1rem;
@@ -710,7 +707,7 @@ input {
 
   .card__text {
     margin-bottom: 1rem;
-  } */
+  } 
 
   .about__intro {
     margin-bottom: 1rem;
@@ -741,8 +738,8 @@ input {
 
   .image__content {
     background: #f8f6f6;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     border-radius: 50%;
   }
@@ -782,10 +779,15 @@ input {
     text-align: center;
   }
 
+  blogs {
+    height: 99vh;
+  }
+
   .blog__container-left {
     width: 250px;
     text-align: left;
     margin-bottom: 1rem;
+    
   }
 
   .second {
@@ -872,11 +874,11 @@ input {
     --fs-400: 1rem;
   }
 
-  .favorites {
+  /* .favorites {
     width: 100%;
     display: flex;
     
-  }
+  } */
 
   .card{
     width: 250px;
@@ -970,13 +972,13 @@ input {
     margin-bottom: 1.5rem;
   }
   
-  .favorites {
+  /* .favorites {
     width: 100%;
     display: flex;
     
-  }
+  } */
 
-  .card{
+  card{
     width: 250px;
     height: 250px;
     flex: 2;
@@ -1290,30 +1292,14 @@ input {
     width: 250px;
     margin: 0 auto;
   }
-  .favorites {
-    width: 100%;
+   .favorites {
     display: flex;
-    gap: 50px;
-  }
+    
+    text-align: center;
+  } 
 
-  .card{
-    width: 250px;
-    height: 250px;
-    flex: 1;
-  }
 
-.card img {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-.image__container {
-  margin-bottom: 4rem;
-}
 
-.favorite {
-  margin-bottom: 4rem;
-}
   .favorite h2 {
     font-size: 2.5rem;
     font-weight: 500;
