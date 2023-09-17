@@ -76,7 +76,7 @@
         <!-- ======HOME======= -->
         <section class="home section container" id="home">
             <!-- <span>20zSell</span> -->
-            <div class="home__text">
+            <div class="home__text" id="home__text">
                 <h1>Comfy Wooden <br>
                     Office-Desk
                     </h1>
@@ -86,7 +86,7 @@
                     <a href="#favorites" class="shop large__no-display">SHOP NOW</a>
             </div>
 
-            <div class="oval">
+            <div class="oval" id="oval">
                 <img src="/Images/pngegg (1).png" alt="">
                 <span>Multiuse</span>
                 <h3>Office Desk 65G</h3>
@@ -96,11 +96,13 @@
         </section>
 
         <!-- ======FAVORITES======= -->
-        <section class="favorite section container" id="favorites">
+        <section class="favorite section container">
+           <div class="favorites__text" id="favorites__text">
             <h2>Our Favorites Collections</h2>
             <p>All kind of office and home using furniture collections with best features</p>
+           </div>
 
-            <div class="favorites">
+            <div class="favorites" id="favorites">
                 <div class="card">
                     <div class="image__container">
                         <img src="Images/pngegg (2).png" alt="">
@@ -136,8 +138,8 @@
             </div>
         </section>
 
-        <section class="about container section" id="about">
-            <div class="about__intro">
+        <section class="about container section">
+            <div class="about__intro" id="about__intro">
                 <div class="about__text">
                     <h1>About Plantx</h1>
                     <p>All kind of office and home using furniture collections with best furniture
@@ -149,7 +151,8 @@
 
             </div>
 
-            <div class="about__content">
+            <div class="about__content" >
+               <div class="about__content" id="about__content">
                 <h1>Plantx ecommerce store </h1>
                 <div class="content">
                     <div class="image__content">
@@ -163,8 +166,9 @@
                         <img src="Images/pngegg (7).png" alt="">
                     </div>
                 </div>
+               </div>
 
-                <div class="content__text">
+                <div class="content__text" id="content__text">
                     <div class="content__item">
                         <h2>products and price comparison</h2>
                     <p>All kind of office and home using furniture collections with best features
@@ -191,22 +195,22 @@
             </div>
         </section>
         
-        <section class="explore section " id="explore">
-            <div class="explore__container container">
-                <div class="explore__text">
+        <section class="explore section " >
+            <div class="explore__container container" >
+                <div class="explore__text" id="explore">
                     <h1>Explore our plantx merchandise</h1>
                     <p>plantx offers all kinds of home living products for comforting living</p>
                     <a href="#favorites" class="shop explore__no-show">SHOP NOW</a>
                 </div>
     
-                <div class="explore__img">
+                <div class="explore__img" id="explore__img">
                     <img src="Images/christina-wocintechchat-com-kXfBDl0fR1E-unsplash.jpg" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="blogs section container" id="blog">
-            <div class="blog__container-left">
+        <section class="blogs section container" >
+            <div class="blog__container-left" id="blog__container-left">
                 <h1>Blogs to make shopping beneficial</h1>
                 <p>
                     All kind of office and home using furniture collections with best features
@@ -214,7 +218,7 @@
                             
                 </p>
             </div>
-            <div class="blog__container-right">
+            <div class="blog__container-right" id="favorites">
                 <div class="favorites blog__right">
                     <div class="card">
                         <div class="image__container">
@@ -252,7 +256,8 @@
         </section>
 
         <section class="contact section container" id="contact">
-            <h1>Lets get <br> connected</h1>
+            <div class="connect" id="connect">
+                <h1>Lets get <br> connected</h1>
             <div class="home__social contact__social">
                 <a href="#" target="_blank" class="home__social-link">
                     <i class="ri-instagram-line"></i>
@@ -266,8 +271,9 @@
                     <i class="ri-github-line"></i>
                 </a>
             </div>
+            </div>
 
-            <form action="">
+            <form action="" class="form" id="form">
                 <input type="text" placeholder="enter your email">
                 <input class="button" type="button" value="READ MORE">
             </form>
@@ -303,7 +309,11 @@
     </div>
 </footer>
 
+    <script src="scrollreveal.min.js"></script>
+    
     <script src="index.js"></script>
+
+   
 </body>
 
 </html>

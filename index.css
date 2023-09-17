@@ -518,6 +518,9 @@ a.shop {
   text-align: center;
 }
 
+.explore__no-show {
+  display: none;
+}
 .blog__container-left {
   width: 300px;
   text-align: left;
@@ -1389,6 +1392,10 @@ input {
     background: #f8f6f6;
   }
 
+  .explore__no-show {
+    display: block;
+    width: 200px;
+  }
   .explore__container {
     display: flex;
     justify-content: space-between;
@@ -1419,7 +1426,7 @@ input {
     margin-top: 1.5rem;
   }
   .explore__img img {
-    width: 600px;
+    width: 550px;
     height: 550px;
     
   }
