@@ -187,9 +187,6 @@ select {
   transition: box-shadow .4s;
 }
 
-.large__no-display {
-  display: none;
-}
 .nav {
   position: relative;
   height: var(--header-height);
@@ -347,6 +344,7 @@ select {
   margin-top: 4rem;
   width: 90%;
   text-align: center;
+  height: 100vh;
 }
 
 .large__no-display {
@@ -362,7 +360,8 @@ select {
 }
 
 .home p {
-  width: 250px;
+  width: 300px;
+  font-size: 1.1rem;
   margin: 0 auto;
   margin-top: 2rem;
 }
@@ -391,7 +390,7 @@ select {
 .oval h3 {
   font-size: .95rem;
   font-weight: 600;
-  margin-bottom: -2rem;
+  margin-bottom: -2.5rem;
 }
 
 .oval p {
@@ -606,6 +605,8 @@ input {
     background: #f8f6f6;
     margin-top: 4rem;
     width: 90%;
+    height: 100vh;
+    margin-bottom: 2rem;
     text-align: center;
   }
 
@@ -668,6 +669,10 @@ input {
     border-radius: 5px;
   }
  
+  .favorite {
+    margin-top: 2rem;
+  }
+
   .favorites {
     display: grid;
     grid-template-columns: 250px 250px;
@@ -675,7 +680,6 @@ input {
     justify-content: center;
     column-gap: .5rem;
     padding-top: 1rem;
-
   }
 
   .favorite h2 {
@@ -934,7 +938,7 @@ input {
   .home {
     width: 100%;
     margin: 0 auto;
-    position: relative;
+    height: 100vh;
   }
   .home span {
     font-size: 2.5rem;
@@ -951,34 +955,36 @@ input {
 
   
   .oval {
-    width: 550px;
-    height: 450px;
-  }
-
-  .oval img {
-    width: 450px;
+    width: 350px;
     height: 250px;
   }
 
+  .oval img {
+    width: 250px;
+    height: 200px;
+  }
+
   .oval span {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-top: -1rem;
   }
 
   .oval h3 {
-    margin-top: .5rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
-
+    margin-bottom: .5rem;
   }
 
   .oval p {
     width: 300px;
     margin: 0 auto;
-    margin-top: 2.5rem;
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
   }
   
+  a.shop {
+    padding: .5rem 1.7rem;
+  }
   /* .favorites {
     width: 100%;
     display: flex;
@@ -1295,11 +1301,13 @@ input {
     margin: 0 auto;
   }
    .favorites {
-    display: flex;
-    
+    display: flex;   
     text-align: center;
   } 
 
+  .favorite {
+    margin-bottom: 5rem;
+  }
 
 
   .favorite h2 {
