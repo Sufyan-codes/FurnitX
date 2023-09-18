@@ -187,6 +187,9 @@ select {
   transition: box-shadow .4s;
 }
 
+.large__no-display {
+  display: none;
+}
 .nav {
   position: relative;
   height: var(--header-height);
@@ -346,6 +349,9 @@ select {
   text-align: center;
 }
 
+.large__no-display {
+  display: none;
+}
 .home span {
   font-size: 2rem;
 }
@@ -409,7 +415,7 @@ a.shop {
 .card {
   text-align: center;
   position: relative;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -603,6 +609,9 @@ input {
     text-align: center;
   }
 
+  .second {
+    display: block;
+  }
   .home span {
     font-size: 1.7rem;
   }
@@ -790,9 +799,7 @@ input {
     
   }
 
-  .second {
-    display: none;
-  }
+  
 
 
   a.blog__button {
@@ -978,12 +985,7 @@ input {
     
   } */
 
-  card{
-    width: 250px;
-    height: 250px;
-    flex: 2;
-  }
-
+  
 
   .favorite h2 {
     font-size: 2.5rem;
