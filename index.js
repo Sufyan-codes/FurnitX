@@ -34,14 +34,14 @@ const  shadowHeader = () => {
 window.addEventListener('scroll', shadowHeader)
 
 /*==============Animation======================*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-}) 
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '60px',
+//     duration: 2500,
+//     delay: 400,
+// }) 
 
-sr.reveal(`.about__content, .explore, .blog__container-left, .favorites__text`, {origin: 'right'})
-sr.reveal(` .favorites, .content__text, .explore__img, nav__right`, {origin: 'left'})
-sr.reveal(`.home__text, .oval, .about__intro`, {origin: 'top'})
-sr.reveal(`.about__content, .connect, .form`, {origin: 'bottom'})
+// sr.reveal(`.about__content, .explore, .blog__container-left, .favorites__text`, {origin: 'right'})
+// sr.reveal(` .favorites, .content__text, .explore__img, nav__right`, {origin: 'left'})
+// sr.reveal(`.home__text, .oval, .about__intro`, {origin: 'top'})
+// sr.reveal(`.about__content, .connect, .form`, {origin: 'bottom'})
