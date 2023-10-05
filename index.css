@@ -84,11 +84,6 @@ body {
 
   line-height: 1.5;
   min-height: 100vh;
-
-  display: grid;
-  grid-template-rows: min-content 1fr;
-
-  overflow-x: hidden;
 }
 
 
@@ -1547,6 +1542,6 @@ input {
 
 }
 
-/* *{
+*{
   border: 2px solid salmon;
-} */
+}
